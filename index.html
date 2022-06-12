@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Task List</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Task List</h1>
+		<form id="new-task-form">
+			<input type="text" id="new-task-input" placeholder="new task"/>
+			<input type="submit" id="new-task-submit" value="Add Task"/>
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+			<ul id="tasks">
+				<!-- <li class="task">
+					<input type="text" class="text" value="Do the dishes" readonly/>
+					<div class="buttons">
+						<button class="btn-edit">Edit</button>
+						<button class="btn-delete">Delete</button>
+					</div>
+				</li> -->
+			</ul>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
