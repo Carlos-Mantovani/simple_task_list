@@ -119,10 +119,12 @@ main {
 	font-size: 1.125rem;
 	display: block;
 	transition: 0.4s;
+	cursor:  default;
 }
 
 .task .text:not(:read-only) {
 	color: var(--pink);
+	cursor: auto;
 }
 
 .task .buttons {
@@ -156,4 +158,9 @@ main {
 .task .buttons .btn-delete {
 	color: crimson;
 }
-	
+
+.done {
+	text-decoration: line-through;
+	text-decoration-color: var(--darkest);
+	text-decoration-thickness: 0.1rem;
+}
