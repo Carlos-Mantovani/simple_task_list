@@ -57,6 +57,8 @@ const addTasks = () => {
 			storageArray.splice(i, 1);
 			console.log(storageArray);
 			setStorage(storageArray);
+			restartScreen();
+			addTasks();
 		});
 	}
 }
@@ -71,7 +73,7 @@ newTaskForm.addEventListener('submit', (e) => {
 		return;
 	}
 	storageArray = getStorage();
-	storageArray.push({'task': newTaskInput.value, 'status': ''});
+	storageArray.push({'task': newTaskInput.value});
 	setStorage(storageArray);
 	restartScreen();
 	addTasks();
